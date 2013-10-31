@@ -1,0 +1,66 @@
+/* Put your custom CSS here */
+#logo {
+	text-align:center;
+}
+#menu {
+	height:20px;
+	width:auto;
+}
+#menu a{
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+#project {
+	float:left;
+}
+#service {
+	float:right;
+}
+#fullweb {
+	text-align:center;
+}
+#footer {
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+#fullweb {
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+#content {
+	font:Georgia, "Times New Roman", Times, serif;
+	text-align:center;
+}
+#content h2 {
+	font:Georgia, "Times New Roman", Times, serif;
+	color:#8F08F8;
+}
+#content p {
+	font:Georgia, "Times New Roman", Times, serif;
+	text-align:left;
+}
+#content h4 b {
+	font-size:larger;
+	color:#298A08;
+}
+#content h4 s {
+	color:#F00;
+}
+
+#img {
+	float:left;
+}
+#img1 {
+	text-align:center;
+}
+
+#back_to_camera {
+	clear: both;
+	display: block;
+	height: 80px;
+	line-height: 40px;
+	padding: 20px;
+}
+.fluid_container {
+	margin: 0 auto;
+	max-width: 1000px;
+	width: 90%;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<!-- Comment header
+File name : Contact Me page
+Author's Name : Niket Bajaj
+Web site name : NB Web designer_Mobile version
+This page is having form and my contact info. -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title></title>
+  
+   <script language="javascript" type="text/javascript">
+function contact_validation(){
+var med = document.contact;
+if(med.name.value==''){
+	alert("Please Enter Your Name");
+   	med.name.focus();
+   	return false;
+	}
+if(med.email_id.value==''){
+   	alert("Please Enter Email");
+   	med.email_id.focus();
+   	return false;
+ 	}
+if(med.phone.value==''){
+   	alert("Please Enter Phone Number");
+   	med.phone.focus();
+   	return false;
+ 	}
+return true;
+} 
+ </script>
+ 
+ <script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+  
+  <link rel="stylesheet" href="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.css">
+  
+  <!-- Extra Codiqa features -->
+  <link rel="stylesheet" href="css/codiqa.ext.css">
+  
+  <!-- jQuery and jQuery Mobile -->
+  <script src="https://d10ajoocuyu32n.cloudfront.net/jquery-1.9.1.min.js"></script>
+  <script src="https://d10ajoocuyu32n.cloudfront.net/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+
+  <!-- Extra Codiqa features -->
+  <script src="https://d10ajoocuyu32n.cloudfront.net/codiqa.ext.js"></script>
+   
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=394184863958176";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Contact Me -->
+<div data-role="page" id="page1">
+    <div data-theme="a" data-role="header">
+        <a id="next" data-role="button" data-theme="b" href="project.html" data-icon="arrow-r"
+        data-iconpos="right" class="ui-btn-right">
+            Next
+        </a>
+        <a id="back" data-role="button" data-theme="b" href="index.html" data-icon="arrow-l"
+        data-iconpos="left" class="ui-btn-left">
+            Home
+        </a>
+        <h3 id="contact_menu">
+            Contact Me
+        </h3>
+    </div>
+    <!--end of page header--->
+    <div id="content" data-role="content">
+        <div style="" id="logo">
+            <img id="logo" style="width: 277px; height: 100px" src="images/logo3.jpg">
+        </div>
+        <!--end of logo--->
+        <h4>Email on: <u><a href="mailto:niketbajaj08@gmail.com">niketbajaj08@gmail.com</a></u><br />
+        Contact on : <u><a href="tel:7055002787">(705) 500-2787 </a></u></h4>
+        <h4>Keep Connected on</h4>
+        <div class="g-plusone"></div>
+		
+        <div class="fb-like" data-href="https://www.facebook.com/NBWebDesigner" data-width="The pixel width of the plugin" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="button_count" data-action="like" data-show-faces="false" data-send="false"></div>
+                <br /><br />
+        <form action="contact_email.php" id="" method="post" name="contact" enctype="multipart/form-data" onSubmit="return contact_validation();">	
+        	<div class="form_text1">
+                <label for="name">Name *:</label>
+                <input name="name" type="text" id="name" size="30" />
+                <br />
+                <label for="email_id">EmailID *:</label>
+                <input name="email_id" type="text" id="email_id" size="30" />
+                <br />
+                <label for="phone">Contact # *:</label>
+                <input name="phone" type="text" id="phone" size="30" />
+                <br />
+                <label for="comment">Comments:</label>
+                <textarea name="comment" type="text" id="comment" rows="4" cols="30"/></textarea>
+                <br />
+                <label>
+                <input type="submit" name="Submit" value="Submit" class="submit" />
+                </label>
+            </div>  
+            <!--end of form_text1--->              
+        </form>
+    </div>
+    <!--end of content--->
+     <div data-theme="a" data-role="footer" data-position="fixed">
+        <h3 id="footer">
+            &copy;Niket Bajaj Portfolio 2013
+        </h3>
+        <div id="fullweb">
+    		<a href="http://webdesign4.georgianc.on.ca/~200247801/my_protfolio/index.html" target="_blank">Full Site</a>
+    	</div>
+        <!--end of fullweb--->
+    </div>
+    <!--end of footer--->
+</div>
+<!--end of page1 --->
+</body>
+</html>
